@@ -30,7 +30,9 @@
 TARGET_OTA_ASSERT_DEVICE := jflteatt
 
 # Kernel
-TARGET_KERNEL_CONFIG         := jf_att_defconfig
+TARGET_KERNEL_SOURCE        := kernel/samsung/jactivelte/
+TARGET_KERNEL_CONFIG := cyanogen_jf_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := jactive_att_defconfig
 
 # loki
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/msm8960-common/loki
