@@ -12,8 +12,8 @@
     "target_path": "device/samsung/jf-common"
   },
   {
-    "repository": "android_kernel_samsung_jf",
-    "target_path": "kernel/samsung/jf"
+    "repository": "android_kernel_samsung_jactivelte",
+    "target_path": "kernel/samsung/jactivelte"
   },
   {
     "repository": "android_hardware_samsung",
