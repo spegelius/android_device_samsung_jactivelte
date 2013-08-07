@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
     unlocked_bootloaders
 
 ## device overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/jflteatt/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/jactivelte/overlay
 ## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jf-common/overlay-gsm
 
