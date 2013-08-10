@@ -35,4 +35,4 @@ $(call inherit-product, device/samsung/jf-common/jf-common.mk)
 
 # Enable physical back and menu keys
 PRODUCT_COPY_FILES += \
-    device/samsung/jactivelte/keylayout/jactivelte.kl:system/usr/keylayout/jactivelte.kl
+    device/samsung/jactivelte/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
