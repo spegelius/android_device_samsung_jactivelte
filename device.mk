@@ -29,10 +29,11 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/jactivelte/overlay
 ## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jf-common/overlay-gsm
 
+# Enable physical back and menu keys
+PRODUCT_COPY_FILES += \
+    device/samsung/jactivelte/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+
 # Inherit from jf-common
 $(call inherit-product, device/samsung/jf-common/jf-common.mk)
 
 
-# Enable physical back and menu keys
-PRODUCT_COPY_FILES += \
-    device/samsung/jactivelte/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
