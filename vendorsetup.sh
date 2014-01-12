@@ -1,3 +1,2 @@
-add_lunch_combo slim_jactiveltexx-eng
-add_lunch_combo slim_jactiveltexx-userdebug
-
+add_lunch_combo full_jactiveltexx-eng
+add_lunch_combo full_jactiveltexx-userdebug

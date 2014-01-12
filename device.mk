@@ -32,6 +32,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/jf-common/overlay-gsm
 # Enable physical back and menu keys
 PRODUCT_COPY_FILES += \
     device/samsung/jactiveltexx/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+    device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 
 # Inherit from jf-common
 $(call inherit-product, device/samsung/jf-common/jf-common.mk)
