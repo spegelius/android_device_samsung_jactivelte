@@ -17,15 +17,6 @@
 ## (2) Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/jactiveltexx/jactiveltexx-vendor.mk)
 
-#PRODUCT_PACKAGES += \
-#    loki_patch \
-#    loki_flash \
-#    loki.sh \
-#    loki_bootloaders \
-#    unlocked_bootloaders
-
-## device overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/jactiveltexx/overlay
 ## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jf-common/overlay-gsm
 
