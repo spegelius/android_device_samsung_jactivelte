@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/jfltexx/full_jfltexx.mk)
+$(call inherit-product, device/samsung/jactiveltexx/full_jactiveltexx.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := jactiveltexx

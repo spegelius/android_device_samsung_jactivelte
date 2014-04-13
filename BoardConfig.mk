@@ -31,16 +31,17 @@ TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/jactiveltexx/
-TARGET_KERNEL_CONFIG := cyanogen_jf_defconfig
+# CM11 branch kernel config
+#TARGET_KERNEL_CONFIG := cyanogen_jf_defconfig
+# KT kernel config
+TARGET_KERNEL_CONFIG := KT_jf_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := jactive_eur_defconfig
-#TARGET_KERNEL_SELINUX_CONFIG := jfselinux_defconfig
 
-# loki
-#TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/jf-common/loki
 
 TARGET_PROVIDES_CAMERA_HAL := false
 USE_DEVICE_SPECIFIC_CAMERA := true
 
-# for now, untill problems with twrp sixe has been solved
-#TARGET_NO_RECOVERY := true
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00A10000
+# with non-KT kernel, boot.img will be too large. With this build will pass,
+# but the resulting TWRP recovery image will be too large. So do not use it
+# default value = 0x00A00000
+#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00A10000
