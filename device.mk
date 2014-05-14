@@ -18,6 +18,9 @@
 $(call inherit-product-if-exists, vendor/samsung/jactiveltexx/jactiveltexx-vendor.mk)
 
 ## common overlays
+DEVICE_PACKAGE_OVERLAYS += device/samsung/jactiveltexx/overlay
+
+## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jf-common/overlay-gsm
 
 # Enable physical back and menu keys
