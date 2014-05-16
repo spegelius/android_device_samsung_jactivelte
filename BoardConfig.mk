@@ -32,7 +32,23 @@ TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/jactiveltexx/
 TARGET_KERNEL_CONFIG := cyanogen_jactivelte_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/KT-SGS4/
+#TARGET_KERNEL_CONFIG := KT_jf_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := jactive_eur_defconfig
 
+# linaro
+#TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7-12.10/bin/arm-linux-gnueabihf-
+
+#TARGET_PROVIDES_CAMERA_HAL := true
+#USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_PROVIDES_CAMERA_HAL := false
 USE_DEVICE_SPECIFIC_CAMERA := true
+
+TARGET_NEED_CAMERA_ZSL := false
+TARGET_NEED_SAMSUNG_MAGIC_ZSL_1508 := false
+TARGET_ADD_ISO_MODE_1600 := false
+TARGET_ADD_ISO_MODE_HJR := false
+TARGET_NEED_PREVIEW_SIZE_FIXUP := false
+TARGET_NEED_SAMSUNG_CAMERA_MODE := false
+TARGET_VIDEO_PREVIEW_ALWAYS_MAX := true
+
