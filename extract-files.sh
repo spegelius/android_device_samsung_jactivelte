@@ -4,4 +4,4 @@ set -e
 
 export DEVICE=jactiveltexx
 export VENDOR=samsung
-./../jf-common/extract-files.sh $@
+./../jactivelte-common/extract-files.sh $@

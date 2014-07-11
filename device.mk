@@ -15,26 +15,18 @@
 #
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/jactiveltexx/jactiveltexx-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/jactivelte/jactivelte-vendor.mk)
 
-PRODUCT_PACKAGES += \
-    loki_patch \
-    loki_flash \
-    loki.sh \
-    loki_bootloaders \
-    unlocked_bootloaders
+## overlays
+DEVICE_PACKAGE_OVERLAYS += device/samsung/jactivelte/overlay
 
-## device overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/jactiveltexx/overlay
-## common overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/jf-common/overlay-gsm
+# Media configuration
+PRODUCT_COPY_FILES += \
+    device/samsung/jactivelte/audio/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3
 
 # Enable physical back and menu keys
 PRODUCT_COPY_FILES += \
-    device/samsung/jactiveltexx/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
-    device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
+    device/samsung/jactivelte/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 # Inherit from jf-common
-$(call inherit-product, device/samsung/jf-common/jf-common.mk)
-
-
+$(call inherit-product, device/samsung/jactivelte-common/jactivelte-common.mk)

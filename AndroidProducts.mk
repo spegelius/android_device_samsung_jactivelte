@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_jactiveltexx.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_jactivelte.mk
