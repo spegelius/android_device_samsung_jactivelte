@@ -21,7 +21,7 @@
 #
 
 # inherit from common JF
-include device/samsung/jactive-common/BoardConfigCommon.mk
+include device/samsung/jactivelte-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/samsung/jactivelte/BoardConfigVendor.mk
@@ -35,10 +35,10 @@ TARGET_INIT_VENDOR_LIB :=
 TARGET_LIBINIT_DEFINES_FILE :=
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jactivelte/bluetooth
+#BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jactivelte/bluetooth
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/jactivelte/
+TARGET_KERNEL_SOURCE := kernel/samsung/jactive/
 TARGET_KERNEL_CONFIG := cyanogen_jf_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := jactive_eur_defconfig
 
