@@ -41,6 +41,9 @@ TARGET_LIBINIT_DEFINES_FILE :=
 TARGET_KERNEL_SOURCE := kernel/samsung/jactive/
 TARGET_KERNEL_CONFIG := cyanogen_jf_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := jactive_eur_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/KT-SGS4/
+#TARGET_KERNEL_CONFIG := KT_jf_defconfig
+#TARGET_KERNEL_VARIANT_CONFIG := jactive_eur_defconfig
 
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true
