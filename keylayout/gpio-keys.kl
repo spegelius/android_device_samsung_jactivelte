@@ -29,5 +29,5 @@ key 114   VOLUME_DOWN       WAKE
 key 172   HOME              WAKE
 key 528   FOCUS             WAKE
 key 766   CAMERA            WAKE
-key 139   MENU            WAKE
-key 158   BACK            WAKE
+key 139   MENU
+key 158   BACK
