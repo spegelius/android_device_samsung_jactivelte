@@ -21,10 +21,10 @@
 #
 
 # inherit from common JF
--include device/samsung/jactivelte-common/BoardConfigCommon.mk
+-include device/samsung/jf-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/jactiveltexx/BoardConfigVendor.mk
+-include vendor/samsung/jactivelte/BoardConfigVendor.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx

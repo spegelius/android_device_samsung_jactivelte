@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
- 
+
 #
 # This file is the build configuration for a full Android
 # build for maguro hardware. This cleanly combines a set of
@@ -20,16 +20,15 @@
 # details, it only fundamentally contains two inherit-product
 # lines, full and maguro, hence its name.
 #
- 
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from jactiveltexx device #LeJay: Not sure if needed
-$(call inherit-product, device/samsung/jactiveltexx/device.mk)
+# Inherit from jactivelte device #LeJay: Not sure if needed
+$(call inherit-product, device/samsung/jactivelte/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_jactiveltexx
-PRODUCT_DEVICE := jactiveltexx
+PRODUCT_NAME := full_jactivelte
+PRODUCT_DEVICE := jactivelte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := GT-I9295
+PRODUCT_MODEL := jactivelte

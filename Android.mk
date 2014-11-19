@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2012 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,15 +14,16 @@
 # limitations under the License.
 #
 
-# Get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/jactivelte/jactivelte-vendor.mk)
+# WARNING: Everything listed here will be built on ALL platforms,
+# including x86, the emulator, and the SDK.  Modules must be uniquely
+# named (liblights.tuna), and must build everywhere, or limit themselves
+# to only building on ARM if they include assembly. Individual makefiles
+# are responsible for having their own logic, for fine-grained control.
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+LOCAL_PATH := $(call my-dir)
 
-# Enable physical back and menu keys
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+ifneq ($(filter jactivelte jflte,$(TARGET_DEVICE)),)
 
-# Inherit from jf-common
-$(call inherit-product, device/samsung/jf-common/jf-common.mk)
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
+endif
