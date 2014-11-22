@@ -1,49 +1,11 @@
-# SGS4A camera blobs. Some might be repeated in jf-common
-
-# lib/libcamera_client.so
-# lib/libcamera_metadata.so
-# lib/libCameraEngine.so
-# lib/libcameraservice.so
-
-bin/mm-qcamera-daemon
+# SGS4A camera blobs
 
 # Useful stuff for debugging
 bin/mm-qcamera-app
 bin/mm-qcamera-test
 bin/mm-qcamera-testsuite-client
 
-cameradata/datapattern_420sp.yuv
-cameradata/datapattern_front_420sp.yuv
-
-lib/hw/camera.msm8960.so
-
-lib/libchromatix_imx074_default_video.so
-lib/libchromatix_imx074_preview.so
-lib/libchromatix_imx074_video_hd.so
-lib/libchromatix_imx074_zsl.so
-
-lib/libchromatix_imx091_default_video.so
-lib/libchromatix_imx091_preview.so
-lib/libchromatix_imx091_video_hd.so
-
-lib/libchromatix_mt9e013_default_video.so
-lib/libchromatix_mt9e013_preview.so
-lib/libchromatix_mt9e013_video_hfr.so
-
-lib/libchromatix_ov2720_default_video.so
-lib/libchromatix_ov2720_hfr.so
-lib/libchromatix_ov2720_preview.so
-lib/libchromatix_ov2720_zsl.so
-
-lib/libchromatix_ov5647_default_video.so
-lib/libchromatix_ov5647_preview.so
-
-lib/libchromatix_ov8825_default_video.so
-lib/libchromatix_ov8825_preview.so
-
-lib/libchromatix_ov9726_default_video.so
-lib/libchromatix_ov9726_preview.so
-
+# Camera
 lib/libchromatix_s5k3h5xa_zsl.so
 lib/libchromatix_s5k3h5xa_default_video.so
 lib/libchromatix_s5k3h5xa_animation.so
@@ -53,58 +15,11 @@ lib/libchromatix_s5k3h5xa_preview.so
 lib/libchromatix_s5k3h5xa_zsl_drama.so
 lib/libchromatix_s5k3h5xa_zsl_panorama.so
 
-lib/libchromatix_s5k3l1yx_default_video.so
-lib/libchromatix_s5k3l1yx_hfr_120fps.so
-lib/libchromatix_s5k3l1yx_hfr_60fps.so
-lib/libchromatix_s5k3l1yx_hfr_90fps.so
-lib/libchromatix_s5k3l1yx_preview.so
-lib/libchromatix_s5k3l1yx_video_hd.so
-lib/libchromatix_s5k3l1yx_zsl.so
-
-lib/libchromatix_s5k4e1_default_video.so
-lib/libchromatix_s5k4e1_preview.so
-
-lib/libchromatix_s5k6b2yx_pip.so
-lib/libchromatix_s5k6b2yx_preview.so
-lib/libchromatix_s5k6b2yx_smartstay.so
-lib/libchromatix_s5k6b2yx_video.so
-lib/libchromatix_s5k6b2yx_vt.so
-lib/libchromatix_s5k6b2yx_vt_hd.so
-
-lib/libgemini.so
-
-lib/libimage-jpeg-enc-omx-comp.so
-lib/libimage-omx-common.so
-
-lib/libmercury.so
-
-lib/libmmcamera_faceproc.so
-lib/libmmcamera_frameproc.so
-lib/libmmcamera_hdr_lib.so
-lib/libmmcamera_image_stab.so
-lib/libmmcamera_imx091.so
-lib/libmmcamera_interface.so
-lib/libmmcamera_interface2.so
-lib/libmmcamera_plugin.so
-lib/libmmcamera_statsproc31.so
-lib/libmmcamera_wavelet_lib.so
-
-lib/libmmjpeg.so
-lib/libmmjpeg_interface.so
-
-lib/libmmmpod.so
 lib/libmmmpo.so
-
-lib/libmmstillomx.so
-
-lib/liboemcamera.so
 
 lib/libTsAccm.so
 lib/libTsAwb.so
 
-# libmmgesture_services.so Not available. 
-
-
-
-
-
+#Radio
+lib/libsec-ril.so
+lib/libril.so

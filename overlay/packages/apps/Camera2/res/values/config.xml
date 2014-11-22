@@ -18,18 +18,25 @@
 -->
 
 <resources>
-    <!-- The camera removes the focus modes by default when touch-to-focus exists. Use this option to change that behavior -->
-    <bool name="wantsFocusModes">true</bool>
-    <!-- Use ZSL mode for Qualcomm cameras -->
-    <bool name="enableZSL">false</bool>
-    <!-- Magic for enabling ZSL on Samsung cameras -->
-    <bool name="sendMagicSamsungZSLCommand">false</bool>
     <!-- Decode YV16 format on Samsung HDR hardware -->
     <bool name="needsSamsungHDRFormat">false</bool>
+    
+        <!-- Maximum recording length in milliseconds. 0 means unlimited. -->
+    <integer name="max_video_recording_length">0</integer>
+    <!-- Zero shutter lag mode -->
+    <bool name="enableZSL">true</bool>
+    <!-- Ignore bogus preferred preview size -->
     <bool name="ignorePreferredPreviewSizeForVideo">true</bool>
-    <!-- Allows setting video size before recording starts -->
-    <bool name="needsEarlyVideoSize">true</bool>
+    <!-- Cancel autofocus if preview stopped. If camera HAL does not support
+        it set this value to false -->
+    <bool name="cancelAutoFocusOnPreviewStopped">true</bool>
     <!-- Samsung Camcorder Mode -->
-    <bool name="needsSamsungCamMode">true</bool>
+    <bool name="needsSamsungCamMode">false</bool>
+
+    <!-- Allow HDR and ZSL together -->
+    <bool name="enableHDRWithZSL">false</bool>
+    <!-- Enable histogram support -->
+    <bool name="enableHistogram">false</bool>
+
 
 </resources>
