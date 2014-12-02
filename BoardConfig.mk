@@ -33,7 +33,7 @@ TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx,i9295,GT-I9295
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jactivelte/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := jactive_eur_defconfig
+TARGET_KERNEL_CONFIG := jactive_multirom_defconfig
 
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true
@@ -46,8 +46,19 @@ TARGET_NEED_PREVIEW_SIZE_FIXUP := false
 TARGET_NEED_SAMSUNG_CAMERA_MODE := true
 TARGET_VIDEO_PREVIEW_ALWAYS_MAX := true
 
+# MultiROM config. MultiROM also uses parts of TWRP config
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/samsung/jactivelte/multirom/mr_init_devices.c
+MR_DPI := xhdpi
+MR_DPI_FONT := 340
+MR_FSTAB := device/samsung/jactivelte/multirom/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x85000000
+MR_USE_MROM_FSTAB := true
+MR_DEVICE_HOOKS := device/samsung/jactivelte/multirom/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 1
+
 # twrp
-TARGET_RECOVERY_FSTAB := device/samsung/jactivelte/twrp/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/jactivelte/multirom/twrp.fstab
 DEVICE_RESOLUTION := 1080x1920
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
