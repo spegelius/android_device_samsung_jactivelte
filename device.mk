@@ -23,6 +23,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Media configuration
 PRODUCT_COPY_FILES += \
     device/samsung/jactivelte/audio/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3
+    device/samsung/jactivelte/audio/audio_policy.conf:system/etc/audio_policy.conf
 
 # Enable physical back and menu keys
 PRODUCT_COPY_FILES += \
