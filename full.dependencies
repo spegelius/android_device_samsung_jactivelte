@@ -1,48 +1,7 @@
 [
   {
-    "repository":  "SlimRoms/device_samsung_qcom-common",
-    "target_path": "device/samsung/qcom-common",
-    "branch":      "jb4.3"
-  },
-  {
-    "repository":  "SlimRoms/device_samsung_msm8960-common",
-    "target_path": "device/samsung/msm8960-common",
-    "branch":      "jb4.3"
-  },
-  {
-    "repository":  "SlimRoms/device_samsung_jf-common",
-    "target_path": "device/samsung/jf-common",
-    "branch":      "jb4.3"
-  },
-  {
-    "repository":  "SlimRoms/kernel_samsung_jactiveltexx",
-    "target_path": "kernel/samsung/jactiveltexx",
-    "branch":      "jb4.3"
-  },
-  {
-    "repository":  "SlimRoms/proprietary_vendor_samsung",
-    "target_path": "vendor/samsung",
-    "branch":      "jb4.3"
-  },
-  {
-    "repository":  "SlimRoms/hardware_qcom_display-caf",
-    "target_path": "hardware/qcom/display-caf",
-    "branch":      "jb4.3"
-  },
-  {
-    "repository":  "SlimRoms/hardware_qcom_audio-caf",
-    "target_path": "hardware/qcom/audio-caf",
-    "branch":      "jb4.3"
-  },
-  {
-    "repository":  "SlimRoms/hardware_samsung",
-    "target_path": "hardware/samsung",
-    "branch":      "jb4.3"
-  },
-  {
-    "repository":  "SlimRoms/hardware_qcom_media-caf",
-    "target_path": "hardware/qcom/media-caf",
-    "branch":      "jb4.3"
+    "repository": "android_device_samsung_jactivelte-common",
+    "target_path": "device/samsung/jactivelte-common"
   }
 ]
 

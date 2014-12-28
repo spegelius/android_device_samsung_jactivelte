@@ -27,23 +27,13 @@ include device/samsung/jactivelte-common/BoardConfigCommon.mk
 -include vendor/samsung/jactivelte/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx
-
-# We are not a unified device :(
-TARGET_UNIFIED_DEVICE :=
-TARGET_INIT_VENDOR_LIB :=
-TARGET_LIBINIT_DEFINES_FILE :=
+TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx,i9295,GT-I9295
 
 # Bluetooth
-#BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jactivelte/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jactivelte/bluetooth
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/jactive/
-TARGET_KERNEL_CONFIG := cyanogen_jf_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := jactive_eur_defconfig
-#TARGET_KERNEL_SOURCE := kernel/samsung/KT-SGS4/
-#TARGET_KERNEL_CONFIG := KT_jf_defconfig
-#TARGET_KERNEL_VARIANT_CONFIG := jactive_eur_defconfig
+TARGET_KERNEL_CONFIG := jactive_eur_defconfig
 
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true

@@ -22,12 +22,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(BOARD_VENDOR),samsung)
-ifeq ($(TARGET_BOARD_PLATFORM),msm8960)
-ifneq ($(filter jactivelte,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),jactivelte)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-endif
-endif
 endif
