@@ -28,5 +28,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/jactivelte/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
+# init.cm
+PRODUCT_COPY_FILES += \
+    vendor/aosp/etc/init.local.rc:root/init.cm.rc
+
 # Inherit from jf-common
 $(call inherit-product, device/samsung/jactivelte-common/jactivelte-common.mk)
