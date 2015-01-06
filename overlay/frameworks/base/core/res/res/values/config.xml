@@ -60,7 +60,7 @@
     <integer-array name="config_autoBrightnessKeyboardBacklightValues">
     </integer-array>
 
-    <!--integer name="config_buttonBrightnessSettingDefault">0</integer-->
+    <integer name="config_buttonBrightnessSettingDefault">0</integer>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">10</integer>

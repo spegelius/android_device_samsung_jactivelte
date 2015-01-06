@@ -27,7 +27,7 @@ include device/samsung/jf-common/BoardConfigCommon.mk
 -include vendor/samsung/jactivelte/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx
+TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx,i9295,GT-I9295
 
 # Releasetools none
 TARGET_RELEASETOOLS_EXTENSIONS :=
