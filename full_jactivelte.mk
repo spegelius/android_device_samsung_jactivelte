@@ -31,4 +31,4 @@ PRODUCT_NAME := full_jactivelte
 PRODUCT_DEVICE := jactivelte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := jactivelte
+PRODUCT_MODEL := GT-I9295
