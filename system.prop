@@ -2,4 +2,8 @@
 
 # cannot take spaces
 rild.libargs=-d /dev/smd0
-persist.radio.mode_pref_nv10=1
+rild.libpath=/system/lib/libsec-ril.so
+
+ro.telephony.default_network=0
+telephony.lteOnCdmaDevice=0
+DEVICE_PROVISIONED=1
