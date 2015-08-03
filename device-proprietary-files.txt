@@ -1,3 +1,4 @@
+# Add device specific blobs here
 
 # Camera
 lib/libchromatix_imx135_default_video.so
@@ -17,6 +18,6 @@ lib/libmmmpo.so
 lib/libTsAccm.so
 lib/libTsAwb.so
 
-#Radio
-lib/libril.so
+# Radio
 lib/libsec-ril.so
+lib/libril.so

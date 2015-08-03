@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-# Get non-open-source specific aspects if available
+## (2) Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/jactivelte/jactivelte-vendor.mk)
 
-# Overlay
+## device overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Media configuration
