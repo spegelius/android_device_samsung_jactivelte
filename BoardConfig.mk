@@ -33,7 +33,9 @@ TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx,i9295,GT-I9295
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jactivelte/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := jactive_eur_defconfig
+TARGET_KERNEL_CONFIG := 0hulk_CM12.1_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := jactive_eur_defconfig-cm12.1
+TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true
