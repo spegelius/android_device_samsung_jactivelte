@@ -1,3 +1,4 @@
+# Add device specific blobs here
 
 # Camera
 lib/libchromatix_imx135_default_video.so

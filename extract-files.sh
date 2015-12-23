@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-#set -e
+set -e
 
 export DEVICE=jactivelte
 export VENDOR=samsung

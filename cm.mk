@@ -12,5 +12,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="samsung/jactivelte/jactivelte:4.4.2/KTU84Q/I9295XXUCNE5:user/release-keys" \
     PRIVATE_BUILD_DESC="jactivelte-user 4.4.2 KTU84Q I9295XXUCNE5 release-keys"
 
-PRODUCT_NAME := cm_jactivelte
 PRODUCT_DEVICE := jactivelte
+PRODUCT_NAME := cm_jactivelte

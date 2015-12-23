@@ -20,11 +20,12 @@
 # definition file).
 #
 
-# inherit from common JF
+# inherit from common jf
 include device/samsung/jf-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/samsung/jactivelte/BoardConfigVendor.mk
+-include vendor/samsung/jf-gsm-common/BoardConfigVendor.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := jactive,jactivelte,jactiveltexx,i9295,GT-I9295
@@ -34,6 +35,3 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jactivelte/bluetoo
 
 # Kernel
 TARGET_KERNEL_CONFIG := jactive_eur_defconfig
-
-# Camera
-TARGET_PROVIDES_CAMERA_HAL := true
