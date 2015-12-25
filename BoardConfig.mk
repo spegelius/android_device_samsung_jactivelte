@@ -35,3 +35,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jactivelte/bluetoo
 
 # Kernel
 TARGET_KERNEL_CONFIG := jactive_eur_defconfig
+
+# No block based OTA
+BLOCK_BASED_OTA := false
